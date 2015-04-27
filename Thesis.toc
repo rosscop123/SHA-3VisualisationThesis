@@ -1,0 +1,45 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {1.1}Motivation}{5}
+\contentsline {section}{\numberline {1.2}Statement Of Problem}{6}
+\contentsline {section}{\numberline {1.3}General Aims}{6}
+\contentsline {section}{\numberline {1.4}Outline Of Thesis}{7}
+\contentsline {chapter}{\numberline {2}Background And Research}{8}
+\contentsline {section}{\numberline {2.1}Cryptographic Hashing Algorithms Overview}{8}
+\contentsline {subsection}{\numberline {2.1.1}Brief History}{8}
+\contentsline {subsection}{\numberline {2.1.2}Functionality}{9}
+\contentsline {subsection}{\numberline {2.1.3}Applications}{9}
+\contentsline {subsubsection}{Password verification}{9}
+\contentsline {subsubsection}{Integrity Of Data}{9}
+\contentsline {subsubsection}{Pseudorandom Generators}{10}
+\contentsline {subsection}{\numberline {2.1.4}SHA-3}{10}
+\contentsline {section}{\numberline {2.2}Previous Research}{11}
+\contentsline {chapter}{\numberline {3}Specification and Design}{13}
+\contentsline {section}{\numberline {3.1}Project Scope}{13}
+\contentsline {subsection}{\numberline {3.1.1}Project Goals}{13}
+\contentsline {section}{\numberline {3.2}Decisions}{14}
+\contentsline {subsection}{\numberline {3.2.1}Programming Language}{14}
+\contentsline {subsubsection}{JavaScript}{14}
+\contentsline {subsubsection}{Java}{15}
+\contentsline {subsubsection}{C++}{15}
+\contentsline {subsection}{\numberline {3.2.2}3D Graphics Package}{15}
+\contentsline {section}{\numberline {3.3}Visualising SHA-3}{16}
+\contentsline {section}{\numberline {3.4}Tools}{16}
+\contentsline {subsection}{\numberline {3.4.1}Individual Sub-Rounds}{16}
+\contentsline {subsection}{\numberline {3.4.2}Cumulative Difference}{17}
+\contentsline {subsection}{\numberline {3.4.3}Random Bit Difference}{18}
+\contentsline {subsection}{\numberline {3.4.4}Random Bit Difference Summation}{18}
+\contentsline {section}{\numberline {3.5}Graphical User Interface}{19}
+\contentsline {subsection}{\numberline {3.5.1}Menu}{19}
+\contentsline {subsection}{\numberline {3.5.2}Interaction}{19}
+\contentsline {section}{\numberline {3.6}Technical Difficulties}{20}
+\contentsline {chapter}{\numberline {4}Implementation}{22}
+\contentsline {section}{\numberline {4.1}3D World}{23}
+\contentsline {section}{\numberline {4.2}SHA-3 Algorithm}{24}
+\contentsline {subsubsection}{Problems}{25}
+\contentsline {section}{\numberline {4.3}Tools}{26}
+\contentsline {subsection}{\numberline {4.3.1}Visualising SHA-3}{26}
+\contentsline {subsection}{\numberline {4.3.2}Sub-Rounds}{27}
+\contentsline {subsection}{\numberline {4.3.3}Cumulative Difference}{27}
+\contentsline {subsection}{\numberline {4.3.4}Random Bit Difference}{28}
+\contentsline {subsection}{\numberline {4.3.5}Random Bit Difference Summation}{28}
+\contentsline {subsection}{\numberline {4.3.6}Navigation Bar and Menu}{28}

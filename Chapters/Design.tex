@@ -1,0 +1,99 @@
+\chapter{Specification and Design}
+This chapter will focus on examining the specific details required for developing a successful application. It will look closely at decisions which need to be made prior to the implementation of the application. It will continue to explain how SHA-3 will be visualised and discuss how this will be presented to the user. This section of the project is vital to ensuring the implementation of the project goes as smoothly as possible.
+\section{Project Scope}
+In section~\ref{sec:StatementProb}, the outlining problem that this project looks to solve was stated. In this section we look at setting goals which they project will aim to achieve that will solve the problem previously stated. 
+\subsection{Project Goals}
+The goals that are to be set must focus on producing an application that aids the process of teaching/learning SHA-3 and the analysis of the algorithm. They also must give a decisive objective which can be worked towards. These goals will help measure the success of the project alongside user feedback.
+\vspace{5 mm}\\
+When producing the goals, a well thought through and methodical process was established, to ensure that the goals are achievable and measurable. From such, the following goals were concluded:
+\begin{itemize}
+\item Develop an ease of use interface to ensure users are not dissuaded from using the software.
+\item Give a simple, intuitive visualisation of the state. 
+\item Breakdown SHA-3, using it's sub-rounds, making it easier to explain.
+\item Provide the user with a detailed explanation of SHA- to accompany the application.
+\item Supply tools which can be used to help further analyse the algorithm.
+\end{itemize}
+\section{Decisions}
+Prior to designing the application, decisions must be made regarding the progamming language and 3D libraries. This careful planning is to ensure that the chance of backtracking in the development phase is reduced to a minimum, whilst also giving the developer a clear idea of how the project will be developed.
+\vspace{20 mm}\\
+MAYBE OVERKILL ON Programing Language SECTION! TBD
+\subsection{Programming Language}
+There are 3 major programming languages with which the application can be developed with. These include JavaScript, Java and C++, each of them coming with their positives and negatives.
+\subsubsection{JavaScript}
+The main advantage to using JavaScript would be the ease of access to all users. JavaScript can easily be embedded into any website and viewed on any web browser without the need for any additional add-ons. Furthermore, JavaScript has a wide range of libraries which are accessible, with documentation covering all areas of the language.
+\vspace{5 mm}\\
+Although JavaScript looks to have many strong qualities, one drawback is that it is not a programming language which has been used previous to this project in other applications. The means that the project would take much longer than necessary to complete as JavaScript would be learnt whilst developing the application.
+\subsubsection{Java}
+Like JavaScript, Java gives the most users possible access to application, since Java can also be embedded within a web page. Although additional tools and software are required to run the embedded applet. Meaning getting a applet on a website to run can soon become much more complicated process for the user.
+\vspace{5 mm}\\
+Java is one of the most extensively covered programming languages available, with clear documentation for all accessible functions. Alongside this, Java has many libraries available to it, which have been developed over the 20 years which it has been accessible.
+\vspace{5 mm}\\
+Finally, Java is one of the most powerful programming languages available. Giving developers access to objects and classes and thus allowing an easier development of an application.
+\subsubsection{C++}
+C++ is one of the most commonly used programming languages for developing 3D worlds. Like both Java and JavaScript there is extensive documentation available to developers and also a wide range libraries for developing 3D graphics.
+\vspace{5 mm}\\
+Since C++ is primarily used in the development of games, meaning the libraries available contain much more resources that what is necessary in the development of this application. The major concern with C++ is the lack of portability of the final application, since it can not be effectively implemented inside of a web browser.
+\vspace{5 mm}\\
+After looking at the pros and cons of all the programming languages, one programming languages stand out above the others. This programming language is Java because of its portable and powerful nature.
+\subsection{3D Graphics Package}
+After selecting Java as the programming language, the libraries which are to be used must also be selected. There are a few packages available to Java, which have the ability of producing 3D graphics. Of which, the project requires that the library must:
+\begin{itemize}
+\item Be well documented.
+\item Have the ability to be embedded within a browser.
+\item Be simple and easy to access.
+\end{itemize}
+Given these requirements, Java 3D\cite{Java3dLib} is the well documented and easily accessible library which will be used in the application.
+\section{Visualising SHA-3}
+ The way that this project will visualise SHA-3 will be using the state, which, as mentioned in the previous chapter, is represented by a 3-dimensional array. To break down the visualisation further, we require that each element of this array has a visual representation, for which we use a cube, using the colour of the cube to show the value of the bit stored in the element. This then allows the entire state to be created using multiple cubes organised in a specific way which equates to the state.
+\vspace{5 mm}\\
+This representation of the algorithm allows for much more than the simple analysis of the hash value. Instead it allows the users to display midpoints in SHA-3 which previously could not be viewed. This therefore already gives the user the ability to further analyse SHA-3, before the inclusion of any tools specifically designed in aiding the analysis of the algorithm.
+\section{Tools}
+This section looks at the tools which can help cryptographers further analyse SHA-3 but more importantly looks at teaching and furthering the understanding of the algorithm in people looking to learn more about it.
+\subsection{Individual Sub-Rounds}
+To give an in depth understanding of SHA-3, the fundamentals must be firmly grasped by the user. The fundamentals of the algorithm lie within each of the sub-rounds, meaning if the sub-rounds are understood correctly then the complete SHA-3 algorithm will soon follow.
+\vspace{5 mm}\\
+This tool will provide the user with example of each sub-round being applied to a state. The initial state must not be complex, as this will look as if the state has been randomly changed when the sub-round is applied. Instead the state must contain mostly 0's, which will show clearly any bit changes in the state and help to avoid confusion.
+\subsection{Cumulative Difference}
+Cumulative difference runs SHA-3 on a state, in the exact same way as usual. The tool then analyses SHA-3 as the algorithm is running, calculating the differences from a current state to a new state each time one of the sub-rounds are applied. In other words, the tool generates a new state with the value of each element being the differences between the two states, one prior to the sub-round being applied and the other, after the sub-round was applied. The tool then sums all of these newly generated states, creating the state representing the cumulative difference.
+\vspace{5 mm}\\
+The user will be able to move through the states visualising the cumulative difference up to a specific point in the algorithm. This comes with a problem when visualising the cumulative difference which will also be represented as a state. A state usually holds a single bit which can easily be represented on a cube as colouring the cube black or white, although values stored for the cumulative difference are integer values not bits. Therefore visualising this state will be done by supplying each cube with a colour scaled between white and red dependent upon its value in the array. Meaning, the further along in the algorithm which the user look at the deeper the colour of red which will appear. This is be each bit will have changed more often. 
+\vspace{5 mm}\\
+Before using the tool, one may expect that the outcome of this method produces a state with each element containing similar values. Equivalently, each bit can be thought of as changing an equal number of times throughout the algorithm. If so this tool will prove the strength of the algorithm. Although it is a possibility that the cumulative difference is dependent on the initial state and thus maybe exposing weakness in the algorithm which could be exploited.
+\subsection{Random Bit Difference}
+One of the main benefits to visualising the gradual progression of SHA-3, is to allow, for educational purposes, the user to view how quickly two similar initial states, with only one bit difference, diverge from each other. This tool, random bit difference, shows this attribute by taking 2 initial states, where the second state is created from the first with only one bit difference. It then applies SHA-3 to both and records the state prior to each sub-round and finally the state once the algorithm is completed. The tool then generates a set of states which has been calculated from the two recorded sets. This is done by taking the difference of two states, one from each recorded set, at equivalent points throughout the algorithm.
+\vspace{5 mm}\\
+This tool, as mentioned previously, provides the user with a visual representation of how quickly two similar states diverge from each other. Generating very different paths from one another before finally generating two completely different hash values; essentially the main purpose of a cryptographic hashing algorithm.
+\subsection{Random Bit Difference Summation}
+The random bit difference summation tool, uses the previous tool and adds to it, an extra layer which can be used to analysis SHA-3 further. Similar to the previous algorithm it produces the first state, the original state. From this state multiple different states are then generated, with again only one bit difference, ensuring that no two states are the same. SHA-3 is then applied and before each sub-round is applied a summation of all the states is calculated and stored separately. After the final sub-round is applied and SHA-3 has completed, then the final summation is calculated and stored. 
+\vspace{5 mm}\\
+Similar to the cumulative difference, the state containing the summation of all other states will not have a single bit stored in each element of the array. Instead an integer will be stored and this will be represented in the same way which the cumulative difference tool handles this. This is done by assigning a colour between white and red, with the deepness of red representing the value of the element in the array.
+\vspace{5 mm}\\
+This tool gives analysts the ability to study the probability of certain outcomes occurring when changing specific bits and allows them to try and predict the the changes that will occur in the state. If this then becomes possible it exposes serious weaknesses in the algorithm.
+\section{Graphical User Interface}
+This section will discuss how the user will interact will the application, such that a well thought out interface is developed, giving the user the best possible experience available.
+\subsection{Menu}
+The application will be structured such that it focuses on simplicity, allowing the user to focus entirely on the SHA-3 algorithm. The best way to do this would be to have the application open with a simple menu, listing options to the user.
+\vspace{5 mm}\\
+There will be 4 options applicable to the user:
+\begin{itemize}
+\item Standard SHA-3
+\item Individual Sub-Rounds
+\item Cumulative Difference
+\item Random Bit Difference
+\item Random Bit Difference Summation
+\end{itemize}
+When selecting any one of these options they are expand into a new window, displaying the tool. To avoid confusion and allow for a simpler experience, the initial state is randomly generated, meaning the user does not have to worry about preconfiguring the tool. The only choices the user will have to make involve selecting which sub-round they wish to view and also the size of the state.
+\subsection{Interaction}
+Visualising a state in a simple and easy way is critical to ensuring the application succeeds. The user must therefore be able to view the state from different sides and angles. This means the application must be interactive. Giving this ability to the user means that they are able to manipulate the cube to view different angles and directions which gives a greater sense of immersion.
+\vspace{5 mm}\\
+This will be done by allowing the cube to be rotated and moved using the mouse by clicking and dragging, giving the user a similar feel to as if the state was within their hands. Using the arrow keys on the keyboard, the user will also be able to zoom the state in and out viewing more or less of the state.
+\vspace{5 mm}\\
+Navigation bars must also be provided alongside the view of the state, to allow the user to move to and from different stages within each tool. The navigation bar will contain simple arrows directing the user to the first, previous, next and last stage in the SHA-3 algorithm. The navigation bar will also have a `go to sub-round' option which allows the user to entire a value and move directly to that stage.
+\section{Technical Difficulties}
+The SHA-3 algorithm has been implemented many times, in many different programming languages. At the time of the research for this project, all implementations of the algorithm which were discovered, are in many programming languages other than Java. Meaning that SHA-3 must be re-written into Java or ported from another programming language which has the ability of being implemented into a web page. 
+\vspace{5 mm}\\
+After closer analysis of these implementations of SHA-3 and of the source code provided on the Keccak website\cite{KeccakSite} I discovered that they each uses the same implementation method. This, whilst logical, is not beneficial to the project since the algorithm has been coded for efficiency and as such multiple sub-rounds of the algorithm have been merged together making it impossible to view a state between these sub-rounds.
+\vspace{5 mm}\\
+To solve this issue, it is required that SHA-3 is understood in depth and only then can the fundamental, mathematical algorithms for each sub-round can be re-written into Java. Once this has been produced, the well commented and simplistic code can then be used in the teaching of SHA-3, alongside the application itself.
+\vspace{5 mm}\\
+A second issue which must be dealt with, is when using the complete SHA-3 algorithm the state becomes very large and as such can become overwhelming and confusing to a user. Therefore a simple and elegant solution must be found, although without first viewing the state and solution can not yet be reached as this could be come a much bigger problem than originally though. Therefore, this issue will be discussed again in the next section when a further understanding of the issue has been gained.

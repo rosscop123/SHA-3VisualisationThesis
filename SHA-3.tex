@@ -1,0 +1,27 @@
+\subsection{SHA-3}
+\subsection{Competition}
+After NIST announced the competition to develop the cryptographic hashing algorithm SHA-3 \cite{SHA3comp}, many research groups from across the globe began generating their own hashing algorithms. On the 31st October 2008, 64 applicants entered the competition which was soon narrowed down to 51 who entered the first round. NIST continued to narrow down the number of candidates over the coming years until finally announcing Keccak as the winning algorithm in October 2012. NIST then began to standardise the Keccak algorithm and released a draft in 2014.
+\subsection{Design}
+SHA-3 has 4 main stages, the padding of the input data, inserting the input data into the state, permuting the state and obtaining the output  data from the state. Firstly understanding what the state is provides a platform to build on to understand the individual stages to the algorithm.
+\subsubsection{State}
+The state in SHA-3 can be represented by a 3-dimensional array of size $ 5 \times 5 \times \omega $, where $ \omega = 2^{l} $ for some $ 0 < l \leq 6 $. For the full SHA-3 algorithm we have that $ l = 6 $ meaning that the the state can be represented by a 3-dimensional array of size $ 5 \times 5 \times 64 $. Each element in the state represents a bit, either a 1 or a 0.
+\vspace{5 mm}\\
+The state essentially represents a string which is formatted in a specific way, meaning if we were to take element s[i][j][k], where s is the state, we would, equivalently, be taking bit $( (5 \times i + j) \times \omega + k)$ of the string.
+\vspace{5 mm}\\
+Finally we distinguish 2 parts of the state from each other. The first r bits of the state and the remaining c bits of the state, where naturally one can be calculated from the other since the size of the state is known. The value of the bitrate, r, is predefined by NIST in the table below dependant upon the size of the output required.
+\begin{center}
+\begin{tabular}{| l | l |}
+\hline
+\textbf{Hash Value Size (bits)} & \textbf{Bit Rate, r (bits)} \\ \hline
+224 & 1152 \\ \hline
+256 & 1088 \\ \hline
+384  & 832 \\ \hline
+512  & 576 \\ \hline
+\end{tabular}
+\end{center}
+\subsubsection{Padding}
+SHA-3 requires the length of the input string to be a multiple of r, to ensure that it can evenly divided into blocks of length r. This is done by concatenating the string with 10*1. Meaning the input string will now be followed by a 1, zero or more 0 bits and then another 1. 
+\subsubsection{Block Permutation}
+Before explaining how the padded input string in inserted into the state, it would be more beneficial to understand how the block permutation works. The block permutation works by transforming the state from one ordering to another and it does this by applying 5 sub-permutations multiple times. Applying each of the 5 sub-permutations consecutively is called a round and we consider one block permutation to be completed once $12 + 2 \times l$ rounds have been complete, where $l = 6$ as mentioned previously in the design subchapter.
+\vspace{5 mm}\\
+Each sub-permutation 

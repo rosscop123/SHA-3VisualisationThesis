@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{SHA3comp}
+{NIST (National Institute Of Standards and Technology)}.
+\newblock {The SHA-3 Cryptographic Hash Algorithm Competition}.
+\newblock \url{http://csrc.nist.gov/groups/ST/hash/sha-3/}, 2015.
+
+\bibitem{KeccakSite}
+{Bertoni, G. and Daemen, J. and Peeters, M. and Van Assche, G.}
+\newblock {The Keccak sponge function family}.
+\newblock \url{http://keccak.noekeon.org/}, 2015.
+
+\bibitem{SHAvisual}
+J.~Ma, J.~Tao, M.~Keranen, J.~Mayo, C.-K. Shene, and C.~Wang.
+\newblock {SHAvisual: A Visualization Tool for Secure Hash Algorithm}, 2014.
+
+\bibitem{VisSHA1}
+D.~Nasr, H.~Bahig, and S.~Daoud.
+\newblock {Visualizing Secure Hash Algorithm (SHA-1) on the Web}, 2011.
+
+\bibitem{Java3dLib}
+{Wikipedia contributors}.
+\newblock {Java 3D}.
+\newblock \url{http://en.wikipedia.org/wiki/Java_3D}, 2015.
+
+\bibitem{Java3dDoc}
+{Java 3D Parent Project — Project Kenai}.
+\newblock \url{https://java3d.java.net/}, 2015.
+
+\bibitem{SHA3Wiki}
+{Wikipedia contributors}.
+\newblock {SHA-3}.
+\newblock \url{http://en.wikipedia.org/wiki/SHA-3}, 2015.
+
+\end{thebibliography}
