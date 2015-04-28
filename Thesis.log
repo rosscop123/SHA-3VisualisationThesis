@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.2)  26 APR 2015 22:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.2)  28 APR 2015 11:09
 entering extended mode
 **C:/Users/Ross/Documents/Project/Final/Thesis/Thesis.tex
 (C:/Users/Ross/Documents/Project/Final/Thesis/Thesis.tex
@@ -385,17 +385,7 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count102
 \c@subtable=\count103
 )
-(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux
-
-LaTeX Warning: Label `fig:appState' multiply defined.
-
-
-LaTeX Warning: Label `fig:appState' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:appState' multiply defined.
-
-)
+(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
@@ -408,7 +398,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen124
@@ -584,49 +575,70 @@ Overfull \hbox (1.74976pt too wide) in paragraph at lines 109--110
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25] [26]
-<figures/CummulativeDifference.png, id=110, 331.2375pt x 299.61937pt>
-File: figures/CummulativeDifference.png Graphic file (type png)
+<figures/CumulativeDifferenceEarly.png, id=110, 354.57469pt x 270.25969pt>
+File: figures/CumulativeDifferenceEarly.png Graphic file (type png)
 
-<use figures/CummulativeDifference.png>
-Package pdftex.def Info: figures/CummulativeDifference.png used on input line 1
-43.
-(pdftex.def)             Requested size: 266.14978pt x 240.75648pt.
+<use figures/CumulativeDifferenceEarly.png>
+Package pdftex.def Info: figures/CumulativeDifferenceEarly.png used on input li
+ne 144.
+(pdftex.def)             Requested size: 266.14978pt x 202.86746pt.
 
-<figures/CummulativeDifferenceEarly.png, id=111, 349.305pt x 301.125pt>
-File: figures/CummulativeDifferenceEarly.png Graphic file (type png)
+<figures/CumulativeDifference.png, id=111, 358.33875pt x 264.23718pt>
+File: figures/CumulativeDifference.png Graphic file (type png)
 
-<use figures/CummulativeDifferenceEarly.png>
-Package pdftex.def Info: figures/CummulativeDifferenceEarly.png used on input l
-ine 149.
-(pdftex.def)             Requested size: 278.92607pt x 240.4684pt.
+<use figures/CumulativeDifference.png>
+Package pdftex.def Info: figures/CumulativeDifference.png used on input line 15
+0.
+(pdftex.def)             Requested size: 276.79398pt x 204.12045pt.
 
-Overfull \hbox (12.77629pt too wide) in paragraph at lines 149--150
+Overfull \hbox (10.6442pt too wide) in paragraph at lines 150--151
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--157
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[27] <figures/SingleBitDifference.png, id=115, 348.55219pt x 254.45062pt>
+File: figures/SingleBitDifference.png Graphic file (type png)
+
+<use figures/SingleBitDifference.png>
+Package pdftex.def Info: figures/SingleBitDifference.png used on input line 166
+.
+(pdftex.def)             Requested size: 226.22595pt x 165.15022pt.
+
+Overfull \hbox (4.43672pt too wide) in paragraph at lines 166--167
+[][] 
  []
 
-[27 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CummulativeDifference
-.png> <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CummulativeDifferen
-ceEarly.png>]) (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.bbl
-[28]) [29
+<figures/MultipleBitDifference.png, id=116, 345.54094pt x 255.95625pt>
+File: figures/MultipleBitDifference.png Graphic file (type png)
 
-] (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux)
+<use figures/MultipleBitDifference.png>
+Package pdftex.def Info: figures/MultipleBitDifference.png used on input line 1
+72.
+(pdftex.def)             Requested size: 221.78923pt x 164.29181pt.
+ [28 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CumulativeDifference
+Early.png> <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CumulativeDiff
+erence.png>] [29 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/SingleBi
+tDifference.png> <C:/Users/Ross/Documents/Project/Final/Thesis/figures/Multiple
+BitDifference.png>])
+(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Results.tex [30]
+Chapter 5.
+) (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.bbl [31
+
+]) [32
+
+]
+(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 5310 strings out of 493921
- 76767 string characters out of 3144880
- 162707 words of memory out of 3000000
- 8525 multiletter control sequences out of 15000+200000
+ 5331 strings out of 493921
+ 77398 string characters out of 3144880
+ 163707 words of memory out of 3000000
+ 8541 multiletter control sequences out of 15000+200000
  11495 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,9n,40p,876b,1419s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -642,9 +654,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (32 pages, 275293 bytes).
+Output written on Thesis.pdf (35 pages, 277410 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

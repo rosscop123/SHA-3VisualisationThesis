@@ -6,4 +6,6 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Visual Representation of the State in SHA-3\relax }}{24}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Complete dunction for SHA-3\relax }}{25}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces SHA-3 Sub-rounds $\rho $ and $\pi $\relax }}{26}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces SHA-3 Sub-rounds $\rho $ and $\pi $\relax }}{27}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Shows the cumulative difference at different point throughout the SHA-3 algorithm\relax }}{28}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A clear illustration of the diffusion property in SHA-3\relax }}{29}
+\addvspace {10\p@ }

@@ -41,5 +41,8 @@
 \contentsline {subsection}{\numberline {4.3.2}Sub-Rounds}{27}
 \contentsline {subsection}{\numberline {4.3.3}Cumulative Difference}{27}
 \contentsline {subsection}{\numberline {4.3.4}Random Bit Difference}{28}
-\contentsline {subsection}{\numberline {4.3.5}Random Bit Difference Summation}{28}
-\contentsline {subsection}{\numberline {4.3.6}Navigation Bar and Menu}{28}
+\contentsline {subsection}{\numberline {4.3.5}Random Bit Difference Summation}{29}
+\contentsline {section}{\numberline {4.4}Navigation Bar and Menu}{30}
+\contentsline {subsection}{\numberline {4.4.1}NavigationBar}{30}
+\contentsline {subsection}{\numberline {4.4.2}Menu}{30}
+\contentsline {chapter}{\numberline {5}Results}{31}

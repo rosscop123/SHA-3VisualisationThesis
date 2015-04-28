@@ -127,42 +127,67 @@ The Keccak website\cite{KeccakSite} and the SHA-3 wikipedia page\cite{SHA3Wiki} 
 \section{Tools}
 This section will look at the implementation of each of the tools mentioned in the previous chapter.
 \subsection{Visualising SHA-3}
-After completing the visualisation of the state and the SHA-3 algorithm, the next stap would be to merge the two implementations to give one working system.
+After completing the visualisation of the state and the SHA-3 algorithm, the next step would be to merge the two implementations to give one working system.
 \vspace{5mm}\\
-From acknowledging a future problem, the compatibility of the two components, early on in the implementation, it has made the process of merging the two separate parts into one much easier. This is because the creation of the state in the CreateCubes class is of the same format which is too be entered into SHA-3 and also the same output of SHA-3. This means when the state is randomly generated, it can be immediately passed to the SHA-3 algorithm before an array of states being returned, with each element containing the state at each point in the algorithm. Now any element in this array can be selected and displayed using the CreateCubes class, showing how the state progresses throughout SHA-3.
+From acknowledging a future problem, the compatibility of the two components, early on in the implementation, it has made the process of merging the two separate parts into one much easier. This is because the creation of the state in the CreateCubes class is of the same format which is to be entered into SHA-3 and also the same output of SHA-3. This means when the state is randomly generated, it can be immediately passed to the SHA-3 algorithm and an array of states will be returned, with each element containing the state at single unique points in the algorithm. Now any element in this array can be selected and displayed using the CreateCubes class, showing how the state progresses throughout SHA-3.
 \subsection{Sub-Rounds}
-First Paragraph
+Like the full visualisation of SHA-3, individual sub-rounds are equally simple to implement. By repeatedly calling one of the 5 sub-rounds in succession, one can again obtain an array which contains the states after each sub-round is applied. 
 \vspace{5mm}\\
-Second Paragraph
+This tool is produced in the class ``SubRounds'', and although it is only a small segment of code, placing it in its own class gives greater flexibility when selecting specific starting states, navigation options and gives better organisation to the code.
 \subsection{Cumulative Difference}
-First Paragraph
+Generating the ``CumulativeDifference'' class requires more calculations than that of either the SHA-3Visualisation or the SubRounds class. The idea of this class is to develop a tool which calculates and visually shows how often each bit, in each position of the state flips, or changes from a 0 to a 1 or alternatively from a 1 to a 0. It is visualised in the CreateCubes class as a deepness of red, the redder a cube the more times it's value has changed. In figure \ref{fig:CumulativeDifference} it is easy to see the difference between the two states at two different stages in the algorithm.
 \vspace{5mm}\\
+\textit{A more in-depth analysis of these states will be given in the results chapter, as one may notice in figure \ref{fig:CompleteCD} an interesting property of the cumulative difference.}
 \begin{figure}[h!]
 \advance\leftskip-2cm
 \begin{subfigure}{.6\textwidth}
-\includegraphics[width=1\textwidth]{CummulativeDifference.png}
-    \caption{Visual Representation of the State in SHA-3}
-    \label{fig:appState}
+\includegraphics[width=1\textwidth]{CumulativeDifferenceEarly.png}
+    \caption{Cumulative difference calculated for each bit in the state, mid-way through completing the algorithm.}
+    \label{fig:HalfWayCD}
 \end{subfigure}
 \advance\rightskip-2cm
 \hfill\begin{subfigure}{.6\textwidth}
-\includegraphics[width=1.048\textwidth]{CummulativeDifferenceEarly.png}
-    \caption{Visual Representation of the State in SHA-3}
-    \label{fig:appState}
+\includegraphics[width=1.04\textwidth]{CumulativeDifference.png}
+    \caption{Cumulative difference calculated for each bit in the state, once SHA-3 has been completed in its entirety }
+    \label{fig:CompleteCD}
 \end{subfigure}
-\caption{SHA-3 Sub-rounds $\rho$ and $\pi$}
-\label{fig:CummulativeDifference}
+\caption{Shows the cumulative difference at different point throughout the SHA-3 algorithm}
+\label{fig:CumulativeDifference}
 \end{figure}
-\vspace{5mm}\\
+\vspace{20mm}\\
+The cumulative difference class first runs the SHA-3 algorithm on the initial state, storing the state at each point throughout the algorithm. This process is identical to the one used for the SHA3Visualisation class and is therefore logical to use this class to do this first step. The cumulative difference tool then goes a step further to begin to analyse the SHA-3 algorithm. This is done by taking the returned array of states from SHA3Visualisation, running through them and for each bit calculating the summation of the number of changes each bit has gone through. These summations are then stored into a state themselves and can them be used to display the cumulative difference in the CreateCubes class.
 \subsection{Random Bit Difference}
-First Paragraph
+Random bit difference, as discussed in the previous few chapters, looks to show the diffusion property of SHA-3. Again this tool builds on the ``SHA3Visualisation'' class. Firstly a randomly generated state is created, one bit is then selected from this state and is changed, now giving 2 similar, but unique, states. SHA-3 is then applied to both in turn giving now two very different arrays of states. The main function in this class, ``stateDifference'', takes in these two arrays of states and computes the difference at each point.
 \vspace{5mm}\\
-Second Paragraph
+The state difference cycles through each of the arrays one after the other comparing the difference of each bit in the state with the bit of the same position in the other array. This is done simply by XORing the two values together. The function then returns an array of states containing the differences, the initial state containing only one difference and the final containing a 50/50 spilt of differences on average, as shown in figure \ref{fig:FlipBitDifference}.
+\begin{figure}[h!]
+\advance\leftskip-1cm
+\begin{subfigure}{.5\textwidth}
+\includegraphics[width=1.02\textwidth]{SingleBitDifference.png}
+    \caption{An intiail state with a single bit difference, as represented by the red cube.}
+    \label{fig:initialStateFBD}
+\end{subfigure}
+\advance\rightskip-1cm
+\hfill\begin{subfigure}{.5\textwidth}
+\includegraphics[width=1\textwidth]{MultipleBitDifference.png}
+    \caption{The final state with many bit differences, represented by the red cubes.}
+    \label{fig:FinalStateFBD}
+\end{subfigure}
+\caption{A clear illustration of the diffusion property in SHA-3}
+\label{fig:FlipBitDifference}
+\end{figure}
+\vspace{0mm}\\
+Above, in figure \ref{fig:FlipBitDifference} it is clear to see how very subtle changes in the initial conditions cause very different end states. Viewing individual steps within the algorithm, it becomes clear to the user how easily one bit change  propagates through the state.
 \subsection{Random Bit Difference Summation}
-First Paragraph
+Random bit difference summation resides within its own class, ``MultipleFlippedBit'' , and replicates the previously mentioned tool, flipped bit difference on a larger scale. Instead of creating only one different states with a single bit changed, multiple states are created with a single bit changed instead. For example, instead of starting with 2 initial states the class will use in excess of 20 states, each with only one bit difference from the generator state, the original, randomly generated state. After SHA-3 is applied to all the states, the tool sums the total number of differences between each state and the generator state and stores the values into a a state of its own, which is then returned. 
 \vspace{5mm}\\
-Second Paragraph
-\subsection{Navigation Bar and Menu}
-First Paragraph
+The total number of differences state is then displayed in a similar way to cumulative difference, by using the gradient of a colour to represent how many times a bit differs from the generator state.
 \vspace{5mm}\\
-Second Paragraph
+Since changing one bit should make the state indistinguishable to the original state after SHA-3 is applied, effectively appearing random to anyone viewing the state. Summing multiple differences between these states will give a final total state which has very similar values in each element, again showing a clear illustration of the diffusion property.
+\section{Navigation Bar and Menu}
+\subsection{NavigationBar}
+The navigation bar resides within each class, as the content of the navigation bar depends entirely on what the user is viewing at that moment and therefore relies on the tool currently being displayed.
+\vspace{5mm}\\
+ Each button within the navigation bar was created using the JButton class provided by Java libraries. This JButton then is positioned within a JPanel which is placed at the top of the window for ease of access.
+\subsection{Menu}
+The option menu will be the first window to open when the application is launched. It will provide the user with a list of the tools available to them, with the final element of this list containing settings. Settings allows the user to change options such as the size of the state.
