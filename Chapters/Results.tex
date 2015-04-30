@@ -1,2 +1,125 @@
 \chapter{Results}
-This chapter will look to answer the question of how successful this project has been. It will look at two different ways of measuring this. Firstly, returning to the project goals, stated in the specification and design chapter, and discussing whether each goal was a success or failure. The second analysis of the project will be achieved using user feedback. This will be done by allowing them to use the application and asking them specific questions surrounding their experience, whilst also asking users to compare learning SHA-3 with the application to without it.
+This chapter will look at how useful the tools and application is in practice, showing how beneficial it is when used as a teaching extension. Alongside this, newly discovered properties of SHA-3 will be viewed, which have been discovered in the short space of time after the application has been created.
+\vspace{5mm}\\
+The way this chapter will measure how successful the application will be when used to teach SHA-3 is to take a small sample of students and allow them to test the application, before giving feedback of their experience. Alongside this, it will return to the project goals laid out in the third chapter, specification and design, and judge whether these goals have been met.
+\section{Student Testing}
+Students to test the application were selected with little to no knowledge of SHA-3, although all are in their third year of a Computer Science course, partaking in either single and joint honours. These students are therefore already aware of technical terms used in the documentation provided, such as hashing algorithm.
+\vspace{5mm}\\
+The sample was randomly split into two groups, those that would learn SHA-3 with only the Keccak website\cite{KeccakSite} and the SHA-3 wikipedia page\cite{SHA3Wiki}, to be known as the control group. The second group, the experimental group, would have the same resources, but with the addition of the application developed throughout this thesis. The following day both groups were asked to complete a short survey to show how well they understand the algorithm.
+\vspace{5mm}\\
+Both groups were given a fixed length of time of one hour to attempt to learn SHA-3 with there assigned tools. The user manual found towards the back of this thesis was the user manual given to the student alongside the application.
+\vspace{5mm}\\
+Table \ref{table:Survey} shows the survey handed to the student after completing the task given to them. In it, the questions cover a range of areas from how confusing the algorithm was to learn, to asking if the student feels confident enough to be able to teach others the algorithm.
+\vspace{5mm}\\
+The results from each group were recorded, and each question was give a value dependent upon the answers give. A value of 1 was assigned to an answer of strongly disagree, through to a value of 5, assigned to strongly agree. The averages for each group were then calculated to give the results in table \ref{table:SurveyResults}.
+\begin{landscape}
+\centering
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5}
+\begin{flushleft}
+\textbf{Name:\line(1,0){275}\ \ \ Course:\line(1,0){275}}
+\vspace{5mm}\\
+\textbf{Group: Control Group / Experimental Group}
+\end{flushleft}
+\begin{center}
+\begin{table}[h!]
+\begin{tabular}{ |  p{7cm} |  P{3cm} |  P{3cm} |  P{3cm} |  P{3cm} | P{3cm} | }
+    \hline
+    \centering \textbf{Statement} & \textbf{Strongly Disagree} & \textbf{Disagree} & \textbf{Neutral} & \textbf{Agree} & \textbf{Strongly Agree}\\ \hline
+    1) I struggled to understand anything surrounding SHA-3
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    2) I have a clear idea of what the state is in SHA-3.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    3) I fully understand what a round is and what it consists of.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    4) I understand the basics of how the state is permuted in each subround.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    5) Given adequate time I believe I could learn how each sub-round works in full.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    6) I became confused often whilst learning SHA-3.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    7) I am confident enough to teach and help others else learn SHA-3. 
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+    8) I am more interested in hash functions after completing this exercise.
+	& $\square$ & $\square$ & $\square$ & $\square$ & $\square$\\ \hline
+\end{tabular} 
+\caption{Survey Handed to Students After Learning SHA-3}
+\label{table:Survey}
+\end{table}
+\end{center}
+\end{landscape}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{table}[h!]
+\begin{tabular}{ |  p{8cm} |  P{3cm} |  P{3cm} | }
+    \hline
+    \centering \textbf{Statement} & \textbf{Control Group} & \textbf{Experimental Group}\\ \hline
+    1) I struggled to understand anything surrounding SHA-3
+	& $1$ & $1$ \\ \hline
+    2) I have a clear idea of what the state is in SHA-3.
+	& $4.2$ & $4.8$ \\ \hline
+    3) I fully understand what a round is and what it consists of.
+	& $3.8$ & $3.8$ \\ \hline
+    4) I understand the basics of how the state is permuted in each subround.
+	& $2.7$ & $4$ \\ \hline
+    5) Given adequate time I believe I could learn how each sub-round works in full.
+	& $4.5$ & $4.3$ \\ \hline
+    6) I became confused often whilst learning SHA-3. 
+	& $2.4$ & $3$ \\ \hline
+    7) I am confident enough to teach and help others else learn SHA-3. 
+	& $1.8$ & $2.6$ \\ \hline
+    8) I am more interested in hash functions after completing this exercise.
+	& $2.6$ & $4$ \\ \hline
+\end{tabular} 
+\caption{Averages Calculated From Result of Student Survey}
+\label{table:SurveyResults}
+\end{table}
+\end{center}
+\subsection{Analysis}
+The results generated from the survey hold some key information regarding the success of this project. This section looks to analyse the results given in table \ref{table:SurveyResults}, so that this key information can be extracted from it.
+\vspace{0mm}\\
+Firstly, it can be clearly seen that both groups were able to gain at least some useful information about SHA-3.
+\vspace{5mm}\\
+From questions 2 and 3, it is obvious that the SHA-3 Visualisation application is of benefit when explaining the state. Although the same is not true about the rounds, instead both groups can be said to have the same  understand of a SHA-3 round.
+\vspace{5mm}\\
+One of the biggest surprises in this set of data is that student with the application became confused more than the group with out this application. This could be because of a variety of reasons including, the application itself being confusing to work or the visualising of the state being confusing and hard to understand.
+\vspace{5mm}\\
+Although the experimental group seem to have more confidence in themselves surrounding SHA-3, neither groups claim to have enough knowledge of SHA-3 to feel comfortable explaining the algorithm to other. This is understandable though as both groups were only given an hour to learn the algorithm.
+\vspace{5mm}\\
+The final question clearly illustrates that learning SHA-3 with the tool is much more enjoyable than without it. Learning an algorithm like SHA-3 can become tedious and boring when the learner only uses documentation containing only text. Giving the users different materials to learn from makes the process less intense. It also gives users who have a more visual way of learning a different option to choose from.
+\subsection{Additional Feedback}
+After the results had been collected to the short survey, a few short questions were drafted to gain additional information from the students who partook in the survey. Additionally, these questions help to reduce errors in the first survey taken, by discovering student who believed that they knew about SHA-3 but misunderstood or misinterpreted some of the information. The questions were given to the students as a optional, additional final task to complete. The questions given were as follows:
+\begin{itemize}
+\item Explain to the best of your ability what the state in SHA-3 is.
+\item Explain to the best of your ability what a round in SHA-3 is.
+\item Which parts of learning SHA-3 did you find the most confusing?
+\end{itemize}
+The questions where give to the students exactly 3 days after the survey had been completed and returned within 2 days. The three questions were returned by $60\%$ of student in the control group and by $70\%$ of people in the experimental group. 
+\vspace{5mm}\\
+Question one and two were answered very poorly by the control group, giving answers such as the states is a ``group of bits'' or a round is a ``algorithm ran on the state''. Both, whilst true, they were very ambiguous, and only 17% of student return an answer which showed detail understanding.
+\vspace{5mm}\\
+The experimental group showed good knowledge of both the state and rounds in SHA-3. Giving answers like the state is a ``3-dimensional array, where each element is an individual bit'' and one even going as fair as saying, ``A round is made up of sub-rounds, $\chi$, $\pi$, $\rho$, $\iota$ and $\theta$. Each sub-round permutes the state in a specific way and they are ran once each, consecutively to create a single round.''
+\vspace{5mm}\\
+These answers have one or two meanings. The first possibility, the majority of the control group misunderstood what a state and round was when learning SHA-3. Alternatively, the things surrounding SHA-3 which the control group learnt was quickly forgotten, without the visual aid of the tool given to the experimental group.
+\vspace{5mm}\\
+The third and final question was asked to confirm the results obtained for statement 6 in the survey and help understand why. The reason for the higher confusion in the experimental group was as hypothesised when analysing the survey. Many students claimed that the tool wasn't so easy to understand upon first interaction and that the user guide provided contained some confusion itself. The confusion within the application resided within the menu options, given on start up of the application. This is because the students were unaware of what the more obscure options showed.
+\vspace{5mm}\\
+With this information, the user manual has been updated to go into greater depth and explain more clearly what each option/tool shows.
+\section{Project Goals}
+Reminding ourselves firstly of the project goals which have been previously defined:
+\begin{itemize}
+\item Develop an ease of use interface to ensure users are not dissuaded from using the software.
+\item Give a simple, intuitive visualisation of the state. 
+\item Breakdown SHA-3, using it's sub-rounds, making it easier to explain.
+\item Provide the user with a detailed explanation of SHA-3 to accompany the application.
+\item Supply tools which can be used to help further analyse the algorithm.
+\end{itemize}
+These goals were set to ensure the success of the project and discussing each point will help to ensure that it has been.
+\vspace{5mm}\\
+From the responses of the survey, shown in the previous section, it is clear that the first goal has not been completely met. The menu options given within the application does not give the user a clear idea of what each option does. This leads to the application being counter-intuitive, although this is very difficult to do with just a heading placed on each button. Instead this information resides inside the user manual, which has been improved since the feedback from students has been obtained.
+\vspace{5mm}\\
+Other than the confusion of the options menu, the students understood in considerable detail what the state and rounds are. This leads to the conclusion that the state was well illustrated and visualised.
+\vspace{5mm}\\
+The final 3 goals have trivially been achieved as can been seen by any user of the application.
+\section{SHA-3 Analysis}

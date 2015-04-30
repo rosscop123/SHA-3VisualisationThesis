@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.2)  28 APR 2015 11:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.2)  30 APR 2015 12:38
 entering extended mode
 **C:/Users/Ross/Documents/Project/Final/Thesis/Thesis.tex
 (C:/Users/Ross/Documents/Project/Final/Thesis/Thesis.tex
@@ -385,33 +385,63 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count102
 \c@subtable=\count103
 )
-(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks20
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\changepage\changepage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count104
+\cp@tempcnt=\count105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux
+
+LaTeX Warning: Label `fig:stateFigure' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen124
+\scratchcounter=\count106
+\scratchdimen=\dimen126
 \scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen125
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen127
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks22
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -447,7 +477,7 @@ LaTeX Font Info:    ... okay on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count110
+\c@lstlisting=\count112
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (C:\Users\Ross\Documents\Project\Final\Thesis\Title.tex
@@ -457,13 +487,16 @@ File: figures/UOB_logo.png Graphic file (type png)
 <use figures/UOB_logo.png>
 Package pdftex.def Info: figures/UOB_logo.png used on input line 6.
 (pdftex.def)             Requested size: 128.28842pt x 34.60526pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
- [1
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Ross/Documents/P
 roject/Final/Thesis/figures/UOB_logo.png>])
@@ -471,81 +504,73 @@ roject/Final/Thesis/figures/UOB_logo.png>])
 (C:\Users\Ross\Documents\Project\Final\Thesis\Abstract.tex [1
 
 ] [1])
-(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
- [1
+(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.toc [1
 
 ])
 \tf@toc=\write3
  [2]
 (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.lof)
 \tf@lof=\write4
- [3
 
-]
 (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.lot)
 \tf@lot=\write5
 
 (C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Introduction.tex
-[4
+[3
 
 ]
 Chapter 1.
-[5
+[4
 
 ]) (C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Background.tex
-[6] [7]
+[5] [6]
 Chapter 2.
-[8
+[7
 
-] [9] <figures/State.png, id=47, 155.1396pt x 158.994pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--22
+
+ []
+
+[8] [9] <figures/State.png, id=47, 155.1396pt x 158.994pt>
 File: figures/State.png Graphic file (type png)
 
 <use figures/State.png>
-Package pdftex.def Info: figures/State.png used on input line 26.
+Package pdftex.def Info: figures/State.png used on input line 36.
 (pdftex.def)             Requested size: 142.26378pt x 145.81044pt.
-
-
-Package caption Warning: \label without proper \caption on input line 25.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:stateFigure' on page 10 undefined on input line 3
-0.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 30.
-[10 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/State.png>])
-(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Design.tex [11] [12]
+ [10 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/State.png>])
+(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Design.tex [11]
 Chapter 3.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
- [13
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+ [12
 
-] [14]
-[15] [16] [17] [18] [19])
+] [13]
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 60--70
+
+ []
+
+[16] [17] [18])
 (C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Implementation.tex
-[20] [21]
+[19] [20]
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-<figures/appState.png, id=91, 295.1025pt x 307.1475pt>
+<figures/appState.png, id=88, 295.1025pt x 307.1475pt>
 File: figures/appState.png Graphic file (type png)
 
 <use figures/appState.png>
 Package pdftex.def Info: figures/appState.png used on input line 22.
 (pdftex.def)             Requested size: 221.78923pt x 230.84747pt.
- [22
+ [21
 
 ]
 
@@ -559,23 +584,21 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 36.
- [23]
+ [22]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 76.
 
 Overfull \hbox (1.74976pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][] 
  []
 
-[24 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/appState.png>]
+[23 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/appState.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26]
-<figures/CumulativeDifferenceEarly.png, id=110, 354.57469pt x 270.25969pt>
+[24] [25]
+<figures/CumulativeDifferenceEarly.png, id=107, 354.57469pt x 270.25969pt>
 File: figures/CumulativeDifferenceEarly.png Graphic file (type png)
 
 <use figures/CumulativeDifferenceEarly.png>
@@ -583,7 +606,7 @@ Package pdftex.def Info: figures/CumulativeDifferenceEarly.png used on input li
 ne 144.
 (pdftex.def)             Requested size: 266.14978pt x 202.86746pt.
 
-<figures/CumulativeDifference.png, id=111, 358.33875pt x 264.23718pt>
+<figures/CumulativeDifference.png, id=108, 358.33875pt x 264.23718pt>
 File: figures/CumulativeDifference.png Graphic file (type png)
 
 <use figures/CumulativeDifference.png>
@@ -598,7 +621,7 @@ Overfull \hbox (10.6442pt too wide) in paragraph at lines 150--151
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27] <figures/SingleBitDifference.png, id=115, 348.55219pt x 254.45062pt>
+[26] <figures/SingleBitDifference.png, id=112, 348.55219pt x 254.45062pt>
 File: figures/SingleBitDifference.png Graphic file (type png)
 
 <use figures/SingleBitDifference.png>
@@ -610,38 +633,55 @@ Overfull \hbox (4.43672pt too wide) in paragraph at lines 166--167
 [][] 
  []
 
-<figures/MultipleBitDifference.png, id=116, 345.54094pt x 255.95625pt>
+<figures/MultipleBitDifference.png, id=113, 345.54094pt x 255.95625pt>
 File: figures/MultipleBitDifference.png Graphic file (type png)
 
 <use figures/MultipleBitDifference.png>
 Package pdftex.def Info: figures/MultipleBitDifference.png used on input line 1
 72.
 (pdftex.def)             Requested size: 221.78923pt x 164.29181pt.
- [28 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CumulativeDifference
+ [27 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CumulativeDifference
 Early.png> <C:/Users/Ross/Documents/Project/Final/Thesis/figures/CumulativeDiff
-erence.png>] [29 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/SingleBi
+erence.png>] [28 <C:/Users/Ross/Documents/Project/Final/Thesis/figures/SingleBi
 tDifference.png> <C:/Users/Ross/Documents/Project/Final/Thesis/figures/Multiple
 BitDifference.png>])
-(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Results.tex [30]
+(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Results.tex [29]
 Chapter 5.
-) (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.bbl [31
+[30
 
-]) [32
+] [31]
+Overfull \hbox (19.60156pt too wide) in paragraph at lines 26--46
+[][] 
+ []
+
+[32
+
+] [33
+
+] [34] [35])
+(C:\Users\Ross\Documents\Project\Final\Thesis\chapters/Conclusion.tex [36]
+Chapter 6.
+) (C:\Users\Ross\Documents\Project\Final\Thesis\chapters/UserGuide.tex [37
+
+])
+(C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.bbl [38
+
+]) [39
 
 ]
 (C:\Users\Ross\Documents\Project\Final\Thesis\Thesis.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5331 strings out of 493921
- 77398 string characters out of 3144880
- 163707 words of memory out of 3000000
- 8541 multiletter control sequences out of 15000+200000
- 11495 words of font info for 40 fonts, out of 3000000 for 9000
+ 5747 strings out of 493921
+ 82668 string characters out of 3144880
+ 165759 words of memory out of 3000000
+ 8920 multiletter control sequences out of 15000+200000
+ 16367 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,9n,40p,876b,1419s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,40p,876b,1419s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
@@ -653,10 +693,11 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Thesis.pdf (35 pages, 277410 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Thesis.pdf (42 pages, 298564 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

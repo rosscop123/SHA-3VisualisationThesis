@@ -14,6 +14,11 @@ backgroundcolor=\color{grey}}
 \usepackage{url}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{changepage}
+\usepackage{lscape}
+
 \graphicspath{ {figures/} }
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -25,13 +30,18 @@ backgroundcolor=\color{grey}}
 \input{Abstract}
 \tableofcontents
 \listoffigures
+\begingroup
+\let\clearpage\relax
 \listoftables
+\endgroup
 
 \input{chapters/Introduction.tex}
 \input{chapters/Background.tex}
 \input{chapters/Design.tex}
 \input{chapters/Implementation.tex}
 \input{chapters/Results.tex}
+\input{chapters/Conclusion.tex}
+\input{chapters/UserGuide.tex}
 
 
 %\appendix

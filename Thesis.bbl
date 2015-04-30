@@ -1,14 +1,14 @@
 \begin{thebibliography}{1}
 
-\bibitem{SHA3comp}
-{NIST (National Institute Of Standards and Technology)}.
-\newblock {The SHA-3 Cryptographic Hash Algorithm Competition}.
-\newblock \url{http://csrc.nist.gov/groups/ST/hash/sha-3/}, 2015.
-
 \bibitem{KeccakSite}
 {Bertoni, G. and Daemen, J. and Peeters, M. and Van Assche, G.}
 \newblock {The Keccak sponge function family}.
 \newblock \url{http://keccak.noekeon.org/}, 2015.
+
+\bibitem{SHA3comp}
+{NIST (National Institute Of Standards and Technology)}.
+\newblock {The SHA-3 Cryptographic Hash Algorithm Competition}.
+\newblock \url{http://csrc.nist.gov/groups/ST/hash/sha-3/}, 2015.
 
 \bibitem{SHAvisual}
 J.~Ma, J.~Tao, M.~Keranen, J.~Mayo, C.-K. Shene, and C.~Wang.
